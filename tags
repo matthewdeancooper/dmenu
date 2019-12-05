@@ -1,0 +1,191 @@
+${OBJ}	Makefile	/^${OBJ}: arg.h config.h config.mk drw.h$/
+.PHONY	Makefile	/^.PHONY: all options clean dist install uninstall$/
+.c.o	Makefile	/^.c.o:$/
+ARGBEGIN	arg.h	12
+ARGC	arg.h	/^#define ARGC()		argc_$/
+ARGEND	arg.h	32
+ARGF	arg.h	/^#define ARGF()		((argv[0][1] == '\\0' && argv[1] ==/
+ARG_H__	arg.h	7
+BETWEEN	util.h	/^#define BETWEEN(X, A, B)        ((A) <= (X) && (X)/
+CC	config.mk	30
+CFLAGS	config.mk	26
+CLAIM	LICENSE	25
+CONTRACT	LICENSE	26
+CPPFLAGS	config.mk	25
+Clr	drw.h	16
+ColBg	drw.h	15
+ColFg	drw.h	15
+Cur	drw.h	5
+Drw	drw.h	27
+EARGF	arg.h	/^#define EARGF(x)	((argv[0][1] == '\\0' && argv[1] =/
+FLAG	stest.c	/^#define FLAG(x)  (flag[(x)-'a'])$/
+FROM	LICENSE	27
+Fnt	drw.h	7
+Fnt	drw.h	13
+H	dmenu	20
+H…ÀH‹	dmenu	20
+IMPLIED	LICENSE	23
+INTERSECT	dmenu.c	/^#define INTERSECT(x,y,w,h,r)  (MAX(0, MIN((x)+(w),/
+KIND	LICENSE	22
+LDFLAGS	config.mk	27
+LENGTH	dmenu.c	/^#define LENGTH(X)             (sizeof X \/ sizeof X/
+LIABILITY	LICENSE	26
+LIBS	config.mk	23
+MAX	util.h	/^#define MAX(A, B)               ((A) > (B) ? (A) :/
+MERCHANTABILITY	LICENSE	23
+MIN	util.h	/^#define MIN(A, B)               ((A) < (B) ? (A) :/
+Mdmenu	dmenu.c	/^main(int argc, char *argv[])$/
+Mstest	stest.c	/^main(int argc, char *argv[])$/
+M…ÀuNHÿ	drw.o	2
+OBJ	Makefile	/^OBJ = ${SRC:.c=.o}$/
+OTHERWISE	LICENSE	26
+SRC	Makefile	/^SRC = drw.c dmenu.c stest.c util.c$/
+SchemeLast	dmenu.c	29
+SchemeNorm	dmenu.c	29
+SchemeOut	dmenu.c	29
+SchemeSel	dmenu.c	29
+Software	LICENSE	16
+TEXTW	dmenu.c	/^#define TEXTW(X)              (drw_fontset_getwidt/
+UTF_INVALID	drw.c	11
+UTF_SIZ	drw.c	12
+VERSION	config.mk	2
+X11INC	config.mk	8
+all	Makefile	/^all: options dmenu stest$/
+appenditem	dmenu.c	/^appenditem(struct item *item, struct item **list, /
+argv0	stest.c	12
+bh	dmenu.c	41
+cache	dmenu_path	4
+cachedir	dmenu_path	2
+calcoffsets	dmenu.c	/^calcoffsets(void)$/
+charge	LICENSE	12
+cistrstr	dmenu.c	/^cistrstr(const char *s, const char *sub)$/
+clean	Makefile	/^clean:$/
+cleanup	dmenu.c	/^cleanup(void)$/
+clip	dmenu.c	50
+colors	config.def.h	10
+colors	config.h	11
+compare_distance	dmenu.c	/^compare_distance(const void *a, const void *b)$/
+config.h	Makefile	/^config.h:$/
+copy	LICENSE	15
+curr	dmenu.c	47
+cursor	dmenu.c	44
+cursor	drw.h	4
+die	util.c	/^die(const char *fmt, ...) {$/
+dist	Makefile	/^dist: clean$/
+distance	dmenu.c	35
+distribute	LICENSE	15
+dmenu	Makefile	/^dmenu: dmenu.o drw.o util.o$/
+dpy	dmenu.c	51
+dpy	drw.h	8
+dpy	drw.h	20
+drawable	drw.h	23
+drawitem	dmenu.c	/^drawitem(struct item *item, int x, int y, int w)$/
+drawmenu	dmenu.c	/^drawmenu(void)$/
+drw	dmenu.c	55
+drw_clr_create	drw.c	/^drw_clr_create(Drw *drw, Clr *dest, const char *cl/
+drw_create	drw.c	/^drw_create(Display *dpy, int screen, Window root, /
+drw_cur_create	drw.c	/^drw_cur_create(Drw *drw, int shape)$/
+drw_cur_free	drw.c	/^drw_cur_free(Drw *drw, Cur *cursor)$/
+drw_font_getexts	drw.c	/^drw_font_getexts(Fnt *font, const char *text, unsi/
+drw_fontset_create	drw.c	/^drw_fontset_create(Drw* drw, const char *fonts[], /
+drw_fontset_free	drw.c	/^drw_fontset_free(Fnt *font)$/
+drw_fontset_getwidth	drw.c	/^drw_fontset_getwidth(Drw *drw, const char *text)$/
+drw_free	drw.c	/^drw_free(Drw *drw)$/
+drw_map	drw.c	/^drw_map(Drw *drw, Window win, int x, int y, unsign/
+drw_rect	drw.c	/^drw_rect(Drw *drw, int x, int y, unsigned int w, u/
+drw_resize	drw.c	/^drw_resize(Drw *drw, unsigned int w, unsigned int /
+drw_scm_create	drw.c	/^drw_scm_create(Drw *drw, const char *clrnames[], s/
+drw_setfontset	drw.c	/^drw_setfontset(Drw *drw, Fnt *set)$/
+drw_setscheme	drw.c	/^drw_setscheme(Drw *drw, Clr *scm)$/
+drw_text	drw.c	/^drw_text(Drw *drw, int x, int y, unsigned int w, u/
+ecalloc	util.c	/^ecalloc(size_t nmemb, size_t size)$/
+embed	dmenu.c	40
+flag	stest.c	20
+fonts	config.def.h	6
+fonts	config.h	7
+fonts	drw.h	26
+fuzzy	config.h	5
+fuzzymatch	dmenu.c	/^fuzzymatch(void)$/
+gc	drw.h	24
+given	stest.1	16
+grabfocus	dmenu.c	/^grabfocus(void)$/
+grabkeyboard	dmenu.c	/^grabkeyboard(void)$/
+granted	LICENSE	12
+h	drw.h	9
+h	drw.h	19
+inputw	dmenu.c	42
+insert	dmenu.c	/^insert(const char *str, ssize_t n)$/
+install	Makefile	/^install: all$/
+item	dmenu.c	31
+items	dmenu.c	45
+keypress	dmenu.c	/^keypress(XKeyEvent *ev)$/
+left	dmenu.c	33
+lines	config.def.h	17
+lines	config.h	18
+lrpad	dmenu.c	43
+match	dmenu.c	/^match(void)$/
+match	stest.c	19
+matchend	dmenu.c	46
+matches	dmenu.c	46
+menu	README	1
+merge	LICENSE	15
+mh	dmenu.c	41
+modify	LICENSE	15
+mon	dmenu.c	48
+mw	dmenu.c	41
+new	stest.c	21
+next	dmenu.c	47
+next	drw.h	12
+nextrune	dmenu.c	/^nextrune(int inc)$/
+old	stest.c	21
+options	Makefile	/^options:$/
+originaltext	dmenu.c	39
+out	dmenu.c	34
+parentwin	dmenu.c	52
+paste	dmenu.c	/^paste(void)$/
+pattern	drw.h	11
+prev	dmenu.c	47
+printed	stest.1	59
+prompt	config.def.h	9
+prompt	config.h	10
+publish	LICENSE	15
+readstdin	dmenu.c	/^readstdin(void)$/
+restriction	LICENSE	14
+right	dmenu.c	33
+root	dmenu.c	52
+root	drw.h	22
+run	dmenu.c	/^run(void)$/
+scheme	dmenu.c	56
+scheme	drw.h	25
+screen	drw.h	21
+sel	dmenu.c	47
+setup	dmenu.c	/^setup(void)$/
+so	LICENSE	17
+stest	Makefile	/^stest: stest.o$/
+sublicense	LICENSE	15
+test	stest.c	/^test(const char *path, const char *name)$/
+tests	stest.1	71
+text	dmenu.c	32
+text	dmenu.c	38
+topbar	config.def.h	4
+topbar	config.h	4
+uninstall	Makefile	/^uninstall:$/
+usage	dmenu.c	/^usage(void)$/
+usage	stest.c	/^usage(void)$/
+use	LICENSE	15
+utf8	dmenu.c	50
+utf8decode	drw.c	/^utf8decode(const char *c, long *u, size_t clen)$/
+utf8decodebyte	drw.c	/^utf8decodebyte(const char c, size_t *i)$/
+utf8validate	drw.c	/^utf8validate(long *u, size_t i)$/
+utfbyte	drw.c	14
+utfmask	drw.c	15
+utfmax	drw.c	17
+utfmin	drw.c	16
+w	drw.h	19
+win	dmenu.c	52
+worddelimiters	config.def.h	23
+worddelimiters	config.h	24
+xfont	drw.h	10
+xfont_create	drw.c	/^xfont_create(Drw *drw, const char *fontname, FcPat/
+xfont_free	drw.c	/^xfont_free(Fnt *font)$/
+xic	dmenu.c	53
